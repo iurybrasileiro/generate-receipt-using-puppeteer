@@ -36,6 +36,4 @@ COPY --from=build /app /app
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser \
     PUPPETEER_SKIP_DOWNLOAD=true
 
-EXPOSE 3000
-
 CMD ["node", "build/index.js"]
