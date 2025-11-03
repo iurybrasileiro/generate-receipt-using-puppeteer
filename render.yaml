@@ -1,0 +1,8 @@
+previews:
+  generation: automatic
+
+services:
+  - type: web
+    runtime: docker
+    name: generate-receipt-using-puppeteer
+    dockerfilePath: ./Dockerfile
