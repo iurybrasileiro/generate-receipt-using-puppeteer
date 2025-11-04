@@ -36,4 +36,4 @@ COPY --from=build /app /app
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser \
     PUPPETEER_SKIP_DOWNLOAD=true
 
-CMD ["node", "build/index.js"]
+CMD ["yarn", "run", "start"]
